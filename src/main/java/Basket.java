@@ -48,7 +48,7 @@ public class Basket {
     }
 
     private ArrayList<Integer> listOfZeroes() {
-        return list(0,0,0,0,0);
+        return list(0, 0, 0, 0, 0);
     }
 
     public static ArrayList<Integer> replace_5_3With_4_4(ArrayList<Integer> integers) {
@@ -70,11 +70,7 @@ public class Basket {
     }
 
     private int subtractOneIfPositive(int i) {
-        if (isPositive(i)) {
-            return i - 1;
-        } else {
-            return 0;
-        }
+        return isPositive(i) ? i - 1 : 0;
     }
 
     private Integer countPositive(ArrayList<Integer> integers) {
